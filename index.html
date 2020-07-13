@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Slack</title>
+</head>
+<body>
+  <div class="container">
+
+    <!--top-nav-->
+    <div class="top-nav">
+      <div class="top-nav__left">
+        <button class="top-nav__bars_button button unstyled-button">
+          <i class="top-nav__search__icon fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="top-nav__history">
+          <button class="top-nav__history_button  button unstyled-button">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          </button>
+          <button class="top-nav__history_button button unstyled-button">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </button>
+          <button class="top-nav__history_button  button unstyled-button">
+            <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <div class="top-nav__search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <span class="top-nav__search_text">Search Ais</span>
+      </div>
+      <div class="top-nav__right">
+        <button class="top-nav__help_button unstyled-button button">
+          <i class="fa fa-question" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <!--workplace-selector-->
+    <nav class="workplace-selector">
+      <ul>
+        <li class="workplace-selector__item button unstyled-button">
+          <a class="workplace-selector__item_link" href="#">
+            <span class="workplace-selector__item_link_ais">AIS</span>
+          </a>
+        </li>
+        <li class="workplace-selector__item button unstyled-button">
+          <a class="workplace-selector__item_link" href="#">
+            <i class="fa fa-pause"></i>
+          </a>
+        </li>
+        <li class="workplace-selector__item button unstyled-button">
+          <a class="workplace-selector__item_link" href="#">
+            <i class="fa fa-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--sidebar-nav-->
+      <div class="sidebar__header">
+        <div class="sidebar__header_button">
+          <div class="sidebar__header_info">
+            <div class="sidebar__header_info_team">
+              <span class="sidebar__header_info_team_text">Ais</span>
+              <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="sidebar_header__info_user">
+              <span class="info_user_status">
+                <i class="fa fa-circle"></i>
+              </span>
+              <span class="sidebar__header_info_user_text">
+                Denis Silkov
+              </span>
+            </div>
+          </div>
+        </div>
+        <button class="sidebar__header_new-message-button button unstyled-button">
+          <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i>
+        </button>
+      </div>
+      <nav class="workplace__navigation">
+        <ul class="workplace__list">
+          <li class="workplace__list_item">
+            <a href="" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                <i class="fa fa-commenting-o"></i>
+              </span>
+              <span class="channel_link_name">
+                Threads
+              </span>
+            </a>
+          </li>
+          <li class="workplace__list_item">
+            <a href="" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                <i class="fa fa-at"></i>
+              </span>
+              <span class="channel_link_name">
+                Mentions & reactions
+              </span>
+            </a>
+          </li>
+          <li class="workplace__list_item">
+            <a href="" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                <i class="fa fa-address-book-o"></i>
+              </span>
+              <span class="channel_link_name">
+                People
+              </span>
+            </a>
+          </li>
+          <li class="workplace__list_item">
+            <a href="" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                <i class="fa fa-th"></i>
+              </span>
+              <span class="channel_link_name">
+                Apps
+              </span>
+            </a>
+          </li>
+          <li class="workplace__list_item">
+            <a href="" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                <i class="fa fa-database"></i>
+              </span>
+
+              <span class="channel_link_name">
+                Files
+              </span>
+            </a>
+          </li>
+          <li class="workplace__list_item">
+            <a href="" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                <i class="fa fa-arrow-up"></i>
+              </span>
+              <span class="channel_link_name">
+                Show Less
+              </span>
+            </a>
+          </li>
+        </ul>
+        <ul class="channels__list">
+          <li class="workplace__list_item">
+            <a href="#" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                +
+              </span>
+              <span class="channel_link_name">
+                Channels
+              </span>
+            </a>
+            <span class="add-new">
+              +
+            </span>
+          </li>
+          <li class="workplace__list_item">
+            <a href="#" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                #
+              </span>
+              <span class="channel_link_name">
+                general
+              </span>
+            </a>
+          </li>
+          <li class="workplace__list_item">
+            <a href="#" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                #
+              </span>
+              <span class="channel_link_name">
+                questions
+              </span>
+            </a>
+          </li>
+          <li class="workplace__list_item">
+            <a href="#" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                #
+              </span>
+              <span class="channel_link_name">
+                random
+              </span>
+            </a>
+          </li>
+          <li class="workplace__list_item">
+            <a href="#" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                #
+              </span>
+              <span class="channel_link_name">
+                task1
+              </span>
+            </a>
+          </li>
+          <li class="workplace__list_item">
+            <a href="#" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                <i class="fa fa-lock"></i>
+              </span>
+              <span class="channel_link_name">
+                task2
+              </span>
+            </a>
+          </li>
+          <li class="workplace__list_item">
+            <a href="#" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                +
+              </span>
+              <span class="channel_link_name">
+                Add a channel
+              </span>
+            </a>
+          </li>
+        </ul>
+        <ul class="user-activity__list">
+          <li class="workplace__list_item">
+            <a href="#" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                <i class="fa fa-caret-down"></i>
+              </span>
+              <span class="channel_link_name">
+                Direct messages
+              </span>
+            </a>
+            <span class="add-new">
+              +
+            </span>
+          </li>
+          <li class="workplace__list_item">
+            <a href="#" class="workplace__list_item_link">
+              <span class="channel_link_icon info_user_status">
+                <i class="fa fa-heart"></i>
+              </span>
+              <span class="channel_link_name">
+                Slackbot
+              </span>
+            </a>
+          </li>
+          <li class="workplace__list_item">
+            <a href="#" class="workplace__list_item_link">
+              <span class="channel_link_icon info_user_status">
+                <i class="fa fa-circle"></i>
+              </span>
+              <span class="channel_link_name">
+                denis.silkov (you)
+              </span>
+            </a>
+          </li>
+          <li class="workplace__list_item">
+            <a href="#" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                +
+              </span>
+              <span class="channel_link_name">
+                Invite people
+              </span>
+            </a>
+          </li>
+        </ul>
+        <ul class="user-activity__list">
+          <li class="workplace__list_item">
+            <a href="#" class="workplace__list_item_link">
+              <span class="channel_link_icon">
+                <i class="fa fa-caret-down"></i>
+              </span>
+              <span class="channel_link_name">
+                Apps
+              </span>
+            </a>
+            <span class="add-new">
+              +
+            </span>
+          </li>
+        </ul>
+      </nav>
+
+    <!--main_header-->
+    <div class="main_header">
+      <div class="main_header_info">
+        <div class="channel_title">
+          <div class="channel_title_name button unstyled-button">
+            <i class="fa fa-lock"></i>
+            <span class="channel_link_name">
+                task2
+              </span>
+          </div>
+          <div class="channel_section_selector button unstyled-button">
+                <span>
+                  &nbsp;
+                  <i class="fa fa-star-o"></i>
+                </span>
+          </div>
+        </div>
+        <div class="channel_data">
+          <button class="channel_show-members button unstyled-button">
+            <i class="fa fa-user-o"></i>
+            633
+          </button>
+          <span>|</span>
+          <button class="channel_added-topics button unstyled-button">
+            <i class="fa fa-thumb-tack"></i>
+            2
+          </button>
+          <span>|</span>
+          <button class="channel_add-topic button unstyled-button">
+                <span class="channel_add-topic_text">
+                  Add a topic
+                </span>
+          </button>
+        </div>
+      </div>
+      <button class="main_header_info-button button unstyled-button">
+          <span class="main_header_info-button_icon">
+            i
+          </span>
+      </button>
+    </div>
+
+    <!--main_content-->
+    <div class="main_content">
+
+      <span class="data-timestamp">
+        Friday, July 3rd
+        &nbsp;
+        <i class="fa fa-chevron-down"></i>
+      </span>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="https://ca.slack-edge.com/T4W4W11AT-U51FKH46P-g4e8fdd98ce6-48" alt="user avatar"
+                 class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cupiditate dignissimos distinctio eaque eum iure labore quae quia ullam voluptatem.
+              </span>
+          <div class="message_replies">
+            <div class="reply_avatar_image_container">
+              <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+            </div>
+            <div class="reply_avatar_image_container">
+              <img src="https://ca.slack-edge.com/T4W4W11AT-U51FKH46P-g4e8fdd98ce6-48" alt="user avatar"
+                   class="message_avatar_image">
+            </div>
+            <div class="reply_avatar_image_container">
+              <img src="assets/anonymous-user.png" alt="user avatar" class="message_avatar_image">
+            </div>
+            <div class="reply_avatar_image_container">
+              <img src="https://ca.slack-edge.com/T4W4W11AT-U51FKH46P-g4e8fdd98ce6-48" alt="user avatar"
+                   class="message_avatar_image">
+            </div>
+            <span class="replies-counter">
+              14 replies
+            </span>
+            <span class="replies-info">
+              Last reply 14 days ago
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                joined task2 by invitation from ilya.mokin.ais
+              </span>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:13 AM
+              </span>
+          <br>
+          <span class="message_content">
+                joined task2 by invitation from ilya.mokin.ais
+              </span>
+        </div>
+      </div>
+
+      <hr>
+      <span class="data-timestamp data-timestamp-hr">
+        Saturday, Jun 27th
+        &nbsp;
+        <i class="fa fa-chevron-down"></i>
+      </span>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img class="message_avatar_image"
+                 src="https://ca.slack-edge.com/T015KT4HMFG-U016DNWPBEV-gf00faf0d157-48" alt="user avatar">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:22 AM
+              </span>
+          <br>
+          <span class="message_content">
+                joined task2 by invitation from ilya.mokin.ais
+              </span>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                joined task2 by invitation from ilya.mokin.ais
+              </span>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                joined task2 by invitation from ilya.mokin.ais
+              </span>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="https://ca.slack-edge.com/T4W4W11AT-U51FKH46P-g4e8fdd98ce6-48" alt="user avatar"
+                 class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cupiditate dignissimos distinctio eaque eum iure labore quae quia ullam voluptatem.
+              </span>
+          <div class="message_replies">
+            <div class="reply_avatar_image_container">
+              <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+            </div>
+            <div class="reply_avatar_image_container">
+              <img src="https://ca.slack-edge.com/T4W4W11AT-U51FKH46P-g4e8fdd98ce6-48" alt="user avatar"
+                   class="message_avatar_image">
+            </div>
+            <div class="reply_avatar_image_container">
+              <img src="assets/anonymous-user.png" alt="user avatar" class="message_avatar_image">
+            </div>
+            <div class="reply_avatar_image_container">
+              <img src="https://ca.slack-edge.com/T4W4W11AT-U51FKH46P-g4e8fdd98ce6-48" alt="user avatar"
+                   class="message_avatar_image">
+            </div>
+            <span class="replies-counter">
+              14 replies
+            </span>
+            <span class="replies-info">
+              Last reply 14 days ago
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                joined task2 by invitation from ilya.mokin.ais
+              </span>
+        </div>
+      </div>
+
+      <hr>
+      <span class="data-timestamp data-timestamp-hr">
+        Sunday, Jun 28th
+        &nbsp;
+        <i class="fa fa-chevron-down"></i>
+      </span>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                joined task2 by invitation from ilya.mokin.ais
+              </span>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                joined task2 by invitation from ilya.mokin.ais
+              </span>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                joined task2 by invitation from ilya.mokin.ais
+              </span>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="https://ca.slack-edge.com/T4W4W11AT-U51FKH46P-g4e8fdd98ce6-48" alt="user avatar"
+                 class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cupiditate dignissimos distinctio eaque eum iure labore quae quia ullam voluptatem.
+              </span>
+          <div class="message_replies">
+            <div class="reply_avatar_image_container">
+              <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+            </div>
+            <div class="reply_avatar_image_container">
+              <img src="https://ca.slack-edge.com/T4W4W11AT-U51FKH46P-g4e8fdd98ce6-48" alt="user avatar"
+                   class="message_avatar_image">
+            </div>
+            <div class="reply_avatar_image_container">
+              <img src="assets/anonymous-user.png" alt="user avatar" class="message_avatar_image">
+            </div>
+            <div class="reply_avatar_image_container">
+              <img src="https://ca.slack-edge.com/T4W4W11AT-U51FKH46P-g4e8fdd98ce6-48" alt="user avatar"
+                   class="message_avatar_image">
+            </div>
+            <span class="replies-counter">
+              14 replies
+            </span>
+            <span class="replies-info">
+              Last reply 14 days ago
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="assets/anonymous-user.png" alt="user avatar" class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis dolore esse eum harum labore laudantium magni molestias necessitatibus nobis nostrum obcaecati odit perspiciatis provident qui temporibus, ullam, voluptatibus voluptatum?
+              </span>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                joined task2 by invitation from ilya.mokin.ais
+              </span>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="https://ca.slack-edge.com/T4W4W11AT-U51FKH46P-g4e8fdd98ce6-48" alt="user avatar"
+                 class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Vasja Pupkin
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cupiditate dignissimos distinctio eaque eum iure labore quae quia ullam voluptatem.
+              </span>
+          <div class="message_replies">
+            <div class="reply_avatar_image_container">
+              <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+            </div>
+            <div class="reply_avatar_image_container">
+              <img src="https://ca.slack-edge.com/T4W4W11AT-U51FKH46P-g4e8fdd98ce6-48" alt="user avatar"
+                   class="message_avatar_image">
+            </div>
+            <div class="reply_avatar_image_container">
+              <img src="assets/anonymous-user.png" alt="user avatar" class="message_avatar_image">
+            </div>
+            <div class="reply_avatar_image_container">
+              <img src="https://ca.slack-edge.com/T4W4W11AT-U51FKH46P-g4e8fdd98ce6-48" alt="user avatar"
+                   class="message_avatar_image">
+            </div>
+            <span class="replies-counter">
+              14 replies
+            </span>
+            <span class="replies-info">
+              Last reply 14 days ago
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="https://ca.slack-edge.com/T4W4W11AT-U51FKH46P-g4e8fdd98ce6-48" alt="user avatar"
+                 class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cupiditate dignissimos distinctio eaque eum iure labore quae quia ullam voluptatem.
+              </span>
+          <div class="message_replies">
+            <div class="reply_avatar_image_container">
+              <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+            </div>
+            <div class="reply_avatar_image_container">
+              <img src="https://ca.slack-edge.com/T4W4W11AT-U51FKH46P-g4e8fdd98ce6-48" alt="user avatar"
+                   class="message_avatar_image">
+            </div>
+            <div class="reply_avatar_image_container">
+              <img src="assets/anonymous-user.png" alt="user avatar" class="message_avatar_image">
+            </div>
+            <div class="reply_avatar_image_container">
+              <img src="https://ca.slack-edge.com/T4W4W11AT-U51FKH46P-g4e8fdd98ce6-48" alt="user avatar"
+                   class="message_avatar_image">
+            </div>
+            <span class="replies-counter">
+              14 replies
+            </span>
+            <span class="replies-info">
+              Last reply 14 days ago
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                joined task2 by invitation from ilya.mokin.ais
+              </span>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="assets/user-icon.png" alt="user avatar" class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                joined task2 by invitation from ilya.mokin.ais
+              </span>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="message_avatar_image_container">
+            <img src="assets/anonymous-user.png" alt="user avatar" class="message_avatar_image">
+          </div>
+        </div>
+        <div class="message_data">
+              <span class="message_sender">
+                Denis Silkov
+              </span>
+          &nbsp;
+          <span class="message_timestamp">
+                7:12 AM
+              </span>
+          <br>
+          <span class="message_content">
+                joined task2 by invitation from ilya.mokin.ais
+              </span>
+        </div>
+      </div>
+    </div>
+
+    <!--main_footer-->
+    <div class="main_footer">
+      <div class="message__panel_input">
+        <div class="message_input_field">
+          <div class="input_field">
+            <input type="text" placeholder="Message task2">
+          </div>
+          <div class="message_input_composer">
+            <ul class="input_composer_left-panel">
+              <li class="composer_item"><i class="fa fa-bolt fa-lg" aria-hidden="true"></i></li>
+              <li class="composer_item"><i class="fa fa-bold" aria-hidden="true"></i></li>
+              <li class="composer_item"><i class="fa fa-italic" aria-hidden="true"></i></li>
+              <li class="composer_item"><i class="fa fa-strikethrough" aria-hidden="true"></i></li>
+              <li class="composer_item"><i class="fa fa-code" aria-hidden="true"></i></li>
+              <li class="composer_item"><i class="fa fa-link" aria-hidden="true"></i></li>
+              <li class="composer_item"><i class="fa fa-list-ol" aria-hidden="true"></i></li>
+              <li class="composer_item"><i class="fa fa-list" aria-hidden="true"></i></li>
+              <li class="composer_item"><i class="fa fa-list-alt" aria-hidden="true"></i></li>
+              <li class="composer_item"><i class="fa fa-code" aria-hidden="true"></i></li>
+            </ul>
+            <ul class="right panel">
+              <li class="composer_item">Aa</li>
+              <li class="composer_item">@</li>
+              <li class="composer_item"><i class="fa fa-smile-o" aria-hidden="true"></i></li>
+              <li class="composer_item"><i class="fa fa-paperclip" aria-hidden="true"></i></li>
+              <li class="composer_item"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--channel-detail-->
+      <div class="channel-detail__header">
+        <div class="channel-detail_header_info">
+          <div class="channel-detail__location">
+            <span class="channel_title_name">
+              Details
+            </span>
+          </div>
+          <div class="channel-detail__channel_title">
+            <i class="fa fa-lock"></i>
+            <span class="channel-detail__channel_title_text">
+                task2
+              </span>
+          </div>
+        </div>
+        <button class="channel-detail__header_close-button button unstyled-button">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="channel-detail_content">
+        <ul class="channel-detail__nav">
+          <li class="channel-detail__nav_item">
+            <ul class="channel-detail__contacts">
+              <li class="channel-detail__contacts_item">
+                <span class="channel-detail__contacts_item_icon button unstyled-button">
+                  <i class="fa fa-user-plus"></i>
+                </span>
+                <span class="channel-detail__contacts_item_title">Add</span>
+              </li>
+              <li class="channel-detail__contacts_item">
+                <span class="channel-detail__contacts_item_icon button unstyled-button">
+                  <i class="fa fa-search"></i>
+                </span>
+                <span class="channel-detail__contacts_item_title">Find</span>
+              </li>
+              <li class="channel-detail__contacts_item">
+                <span class="channel-detail__contacts_item_icon button unstyled-button">
+                  <i class="fa fa-phone"></i>
+                </span>
+                <span class="channel-detail__contacts_item_title">Call</span>
+              </li>
+              <li class="channel-detail__contacts_item">
+                <span class="channel-detail__contacts_item_icon button unstyled-button">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <span class="channel-detail__contacts_item_title">More</span>
+              </li>
+            </ul>
+          </li>
+          <li class="channel-detail__nav_item">
+            <span class="channel-detail__nav_item_title">About</span>
+            <span class="channel-detail__nav_item_info">
+              <i class="fa fa-chevron-right"></i>
+            </span>
+          </li>
+          <li class="channel-detail__nav_item">
+            <span class="channel-detail__nav_item_title">Members</span>
+            <span class="channel-detail__nav_item_info">
+                269
+              &nbsp;
+              <i class="fa fa-chevron-right"></i>
+            </span>
+          </li>
+          <li class="channel-detail__nav_item">
+            <span class="channel-detail__nav_item_title">Shortcuts</span>
+            <span class="channel-detail__nav_item_info">
+                0
+              &nbsp;
+              <i class="fa fa-chevron-right"></i>
+            </span>
+          </li>
+          <li class="channel-detail__nav_item">
+            <span class="channel-detail__nav_item_title">
+              Pinned
+            </span>
+            <span class="channel-detail__nav_item_info">
+               2
+              &nbsp;
+              <i class="fa fa-chevron-right"></i>
+            </span>
+          </li>
+          <li class="channel-detail__nav_item">
+            <span class="channel-detail__nav_item_title">Files</span>
+            <span class="channel-detail__nav_item_info">
+              <i class="fa fa-chevron-right"></i>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+</body>
+</html>
